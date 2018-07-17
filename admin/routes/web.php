@@ -15,6 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/user/login', function(){
-    echo '123';
+/*
+ * user
+ */
+Route::get('/user/login', 'UserController@login');
+
+/*
+ * simple
+ */
+Route::get('/simple/hello', function(){
+    echo 'hello world!';
 });
+Route::get('/simple/show', 'SimpleController@show');
