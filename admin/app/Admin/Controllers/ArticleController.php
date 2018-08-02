@@ -91,8 +91,8 @@ class ArticleController extends Controller
         return Admin::form(Article::class, function (Form $form) {
             $form->display('id', '文章ID');
             $form->text('title', '文章标题');
-            //$form->textarea('content', '文章内容');
-            $form->editor('content', '文章内容');
+            $form->ckeditor('content', '文章内容');
+            //$form->editor('content', '文章内容');
         });
     }
 }
