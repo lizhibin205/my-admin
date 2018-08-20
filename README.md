@@ -1,2 +1,3 @@
 # my-admin
-admin base on laravel
+基于laravel开发的后台管理系统，整合常用的功能类库，开箱即用，让开发者专注于业务设计
+
