@@ -11,6 +11,7 @@ use Encore\Admin\Facades\Admin;
 use Encore\Admin\Layout\Content;
 use App\Http\Controllers\Controller;
 use Encore\Admin\Controllers\ModelForm;
+use App\Category;
 
 class ArticleController extends Controller
 {
@@ -91,6 +92,7 @@ class ArticleController extends Controller
         return Admin::form(Article::class, function (Form $form) {
             $form->display('id', '文章ID');
             $form->text('title', '文章标题');
+            $form->select('category_id', '分类')->options(Category::getCategoryMap(1));
             $form->ckeditor('content', '文章内容');
             //$form->editor('content', '文章内容');
         });
