@@ -6,7 +6,6 @@ use Encore\Admin\Traits\AdminBuilder;
 use Encore\Admin\Traits\ModelTree;
 use Illuminate\Database\Eloquent\Model;
 use App\Utils\SoftDeletes;
-use phpDocumentor\Reflection\Types\Integer;
 
 class Category extends Model
 {
