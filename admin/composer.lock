@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f70f827fc753078d87dcc8482d4aa901",
+    "content-hash": "6691d0daf298825c79e7944cfba32b6e",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -513,30 +513,30 @@
         },
         {
             "name": "encore/laravel-admin",
-            "version": "v1.5.19",
+            "version": "v1.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/z-song/laravel-admin.git",
-                "reference": "9841d34ca028cb151c54aa9988bb3f783839fa2a"
+                "reference": "1696ae76863fc7b60ed2c717caef547dc39c30d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/z-song/laravel-admin/zipball/9841d34ca028cb151c54aa9988bb3f783839fa2a",
-                "reference": "9841d34ca028cb151c54aa9988bb3f783839fa2a",
+                "url": "https://api.github.com/repos/z-song/laravel-admin/zipball/1696ae76863fc7b60ed2c717caef547dc39c30d3",
+                "reference": "1696ae76863fc7b60ed2c717caef547dc39c30d3",
                 "shasum": ""
             },
             "require": {
                 "doctrine/dbal": "2.*",
                 "laravel/framework": "~5.5",
                 "php": ">=7.0.0",
-                "symfony/dom-crawler": "~3.1"
+                "symfony/dom-crawler": "~3.1|~4.0"
             },
             "require-dev": {
                 "fzaninotto/faker": "~1.4",
                 "intervention/image": "~2.3",
                 "laravel/browser-kit-testing": "^2.0",
                 "laravel/laravel": "~5.5",
-                "phpunit/phpunit": "~6.0",
+                "phpunit/phpunit": "~6.0 || ~8.0",
                 "symfony/css-selector": "~3.1"
             },
             "suggest": {
@@ -580,7 +580,7 @@
                 "grid",
                 "laravel"
             ],
-            "time": "2018-08-22T11:27:57+00:00"
+            "time": "2019-07-24T03:27:03+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -1879,25 +1879,29 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v3.4.30",
+            "version": "v4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "adb96e63af6fb0cc721cc69861001d60d0133d0c"
+                "reference": "291397232a2eefb3347eaab9170409981eaad0e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/adb96e63af6fb0cc721cc69861001d60d0133d0c",
-                "reference": "adb96e63af6fb0cc721cc69861001d60d0133d0c",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/291397232a2eefb3347eaab9170409981eaad0e2",
+                "reference": "291397232a2eefb3347eaab9170409981eaad0e2",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9|>=7.0.8",
+                "php": "^7.1.3",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-mbstring": "~1.0"
             },
+            "conflict": {
+                "masterminds/html5": "<2.6"
+            },
             "require-dev": {
-                "symfony/css-selector": "~2.8|~3.0|~4.0"
+                "masterminds/html5": "^2.6",
+                "symfony/css-selector": "~3.4|~4.0"
             },
             "suggest": {
                 "symfony/css-selector": ""
@@ -1905,7 +1909,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "4.3-dev"
                 }
             },
             "autoload": {
@@ -1932,7 +1936,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2019-05-30T15:47:52+00:00"
+            "time": "2019-06-13T11:03:18+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
